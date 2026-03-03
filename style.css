@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.topo {
+    background: #111;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+.slogan {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.busca {
+    padding: 6px;
+    border-radius: 4px;
+    border: none;
+}
+
+/* Banner de Patrocinadores */
+.banner-topo {
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.banner-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.patrocinador img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+.patrocinador img:hover {
+    opacity: 1;
+}
+
+/* Seções */
+.secao-titulo {
+    margin: 40px 0 20px;
+    font-size: 22px;
+    border-left: 4px solid #c40000;
+    padding-left: 10px;
+}
+
+/* Principal */
+.principal {
+    margin: 30px 0;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.principal img {
+    width: 100%;
+}
+
+.principal-texto {
+    padding: 20px;
+}
+
+.categoria {
+    font-size: 12px;
+    font-weight: bold;
+    color: #c40000;
+}
+
+.principal h2 {
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #c40000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Grid */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding-bottom: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 0 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Layout lateral */
+.conteudo-lateral {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.lista-noticia {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.sidebar .widget {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #222;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 6px;
+    margin: 10px 0;
+}
+
+.newsletter button {
+    width: 100%;
+    padding: 8px;
+    background: #c40000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.rodape {
+    background: #111;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .conteudo-lateral {
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        text-align: center;
+        margin: 10px 0;
+    }
+}

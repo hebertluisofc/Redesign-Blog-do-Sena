@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do Sena - Redesign</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="container header-flex">
+            <div class="logo-area">
+                <h1 class="logo">Blog do Sena</h1>
+                <span class="slogan">Notícias de Verdade, Sem Enrolação</span>
+            </div>
+
+            <nav class="menu">
+                <a href="#">Início</a>
+                <a href="#">Polícia</a>
+                <a href="#">Política</a>
+                <a href="#">Cidade</a>
+                <a href="#">Esporte</a>
+                <a href="#">Brasil</a>
+                <a href="#">Bahia</a>
+            </nav>
+
+            <input type="text" placeholder="Buscar notícia..." class="busca">
+        </div>
+    </header>
+
+    <!-- Banner de Patrocinadores -->
+    <section class="banner-topo">
+        <div class="container banner-flex">
+            <div class="patrocinador">
+                <img src="https://via.placeholder.com/200x80?text=Empresa+1" alt="Patrocinador 1">
+            </div>
+            <div class="patrocinador">
+                <img src="https://via.placeholder.com/200x80?text=Empresa+2" alt="Patrocinador 2">
+            </div>
+            <div class="patrocinador">
+                <img src="https://via.placeholder.com/200x80?text=Empresa+3" alt="Patrocinador 3">
+            </div>
+            <div class="patrocinador">
+                <img src="https://via.placeholder.com/200x80?text=Empresa+4" alt="Patrocinador 4">
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <!-- Destaque Principal -->
+        <section class="principal">
+            <img src="https://via.placeholder.com/1200x500" alt="">
+            <div class="principal-texto">
+                <span class="categoria">POLÍCIA</span>
+                <h2>Grande operação integrada mobiliza forças de segurança na região central</h2>
+                <p>Uma operação realizada na manhã desta terça-feira reuniu diversas equipes e resultou em apreensões
+                    importantes. A ação impactou o trânsito e chamou a atenção da população.</p>
+                <a href="#" class="btn">Ler matéria completa</a>
+            </div>
+        </section>
+
+        <!-- Notícias em Destaque -->
+        <section class="destaques">
+            <h2 class="secao-titulo">Principais Notícias</h2>
+            <div class="grid-3">
+                <article class="card">
+                    <img src="https://via.placeholder.com/400x250">
+                    <span class="categoria">POLÍTICA</span>
+                    <h3>Câmara aprova novo projeto de infraestrutura urbana</h3>
+                    <p>Projeto prevê melhorias no transporte e ampliação de vias estratégicas.</p>
+                </article>
+
+                <article class="card">
+                    <img src="https://via.placeholder.com/400x250">
+                    <span class="categoria">CIDADE</span>
+                    <h3>Feira cultural movimenta o centro com atrações regionais</h3>
+                    <p>Evento reúne gastronomia, música e artesanato local.</p>
+                </article>
+
+                <article class="card">
+                    <img src="https://via.placeholder.com/400x250">
+                    <span class="categoria">ESPORTE</span>
+                    <h3>Time regional estreia com vitória no campeonato estadual</h3>
+                    <p>Equipe venceu por 2x0 diante de grande público no estádio.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Layout com Sidebar -->
+        <section class="conteudo-lateral">
+
+            <div class="coluna-principal">
+
+                <h2 class="secao-titulo">Últimas Notícias</h2>
+
+                <article class="lista-noticia">
+                    <h3>Nova unidade de saúde será inaugurada no próximo mês</h3>
+                    <p>A prefeitura confirmou a entrega da obra que promete ampliar o atendimento básico.</p>
+                </article>
+
+                <article class="lista-noticia">
+                    <h3>Operação fiscaliza comércio irregular no centro</h3>
+                    <p>Ação conjunta resultou em notificações e apreensões administrativas.</p>
+                </article>
+
+                <article class="lista-noticia">
+                    <h3>Universidade anuncia vestibular com novas vagas</h3>
+                    <p>Instituição amplia oferta de cursos na área de tecnologia.</p>
+                </article>
+
+                <article class="lista-noticia">
+                    <h3>Chuvas fortes causam pontos de alagamento na cidade</h3>
+                    <p>Defesa Civil monitora áreas de risco e orienta moradores.</p>
+                </article>
+
+            </div>
+
+            <aside class="sidebar">
+
+                <div class="widget">
+                    <h3>Mais Lidas</h3>
+                    <ul>
+                        <li><a href="#">Empresário é investigado por irregularidades</a></li>
+                        <li><a href="#">Concurso público abre novas vagas</a></li>
+                        <li><a href="#">Rodovia passa por interdição parcial</a></li>
+                        <li><a href="#">Evento esportivo atrai milhares</a></li>
+                        <li><a href="#">Polícia recupera veículo roubado</a></li>
+                    </ul>
+                </div>
+
+                <div class="widget">
+                    <h3>Previsão do Tempo</h3>
+                    <p>🌤️ 28°C - Sol com algumas nuvens</p>
+                    <p>Umidade: 60%</p>
+                    <p>Ventos: 12km/h</p>
+                </div>
+
+                <div class="widget newsletter">
+                    <h3>Receba Notícias no WhatsApp</h3>
+                    <p>Cadastre-se para receber atualizações diariamente.</p>
+                    <input type="text" placeholder="Seu número">
+                    <button>Quero receber</button>
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>Sobre</h3>
+                    <p>Portal de notícias independente com foco regional, trazendo informação com clareza e
+                        responsabilidade.</p>
+                </div>
+
+                <div>
+                    <h3>Contato</h3>
+                    <p>Email: contato@blogdosena.com</p>
+                    <p>WhatsApp: (77) 99999-0000</p>
+                </div>
+
+                <div>
+                    <h3>Categorias</h3>
+                    <p>Polícia</p>
+                    <p>Política</p>
+                    <p>Cidade</p>
+                    <p>Esporte</p>
+                </div>
+            </div>
+
+            <p class="copyright">
+                © 2026 Blog do Sena - Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
